@@ -103,12 +103,10 @@ Improvements included better warnings and stable loops.
 • Alert:  SOS displayed when needed. 
 • Loop: Repeats indefinitely. 
 16. Folder Structure : 
-project structure: 
+project structure:
+/screenshots 
 README.md 
-/src 
-main.py 
-/screenshots  
-/recordings 
+/main.py 
 The main Python file that runs the program is located in the  src  folder and is 
 named  main.py 
 17. How to Operate Program : 
