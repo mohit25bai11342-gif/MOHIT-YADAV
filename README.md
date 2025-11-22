@@ -104,7 +104,7 @@ Improvements included better warnings and stable loops.
 • Loop: Repeats indefinitely. 
 16. Folder Structure : 
 project structure:
-/project report.pdf
+/project report
 /screenshots 
 README.md 
 /main.py 
