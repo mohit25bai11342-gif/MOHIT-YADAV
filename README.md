@@ -11,8 +11,7 @@ signs and notifies emergency responders when abnormalities are identified.
 
 • The system is developed using Python and demonstrates how fundamental 
 programming concepts can solve real-world problems effectively.
-
-
+------------------------------------------------------------------------
  Real-World Problem
 
 Many elders face difficulties such as: 
@@ -26,17 +25,17 @@ In most cases, the major issue is delay in medical attention.
 saves the lifes         
 ------------------------------------------------------------------------
 
-## 🥅 Objectives
+Objectives
 
--   Simulate heart rate & temperature\
--   Detect abnormal health conditions\
--   Trigger instant SOS alerts\
--   Demonstrate real-time monitoring\
+-   Simulate heart rate & temperature
+-   Detect abnormal health conditions
+-   Trigger instant SOS alerts
+-   Demonstrate real-time monitoring
 -   Offer a beginner-friendly Python model
 
 ------------------------------------------------------------------------
 
-## 📚 Concepts Used (From Coursework)
+ Concepts Used (From Coursework)
 
 -   **Loops** -- continuous monitoring\
 -   **Functions** -- modular approach\
@@ -46,69 +45,69 @@ saves the lifes
 
 ------------------------------------------------------------------------
 
-## 🛠️ Tools & Technologies
+ Tools & Technologies
 
--   Python 3.x\
--   Libraries: `random`, `time`\
+-   Python 3.x
+-   Libraries: `random`, `time`
 -   Console-based UI
 
 ------------------------------------------------------------------------
 
-## 📝 Problem Definition
+ Problem Definition
 
 Elders need reliable monitoring, but manual supervision isn't
-practical.\
+practical.
 This system automates vital checking and alerts during emergencies.
 
 ------------------------------------------------------------------------
 
-## 🔍 Requirements Analysis
+ Requirements Analysis
 
-### ✔ Functional Requirements
+ Functional Requirements
 
--   Generate heart rate\
--   Generate body temperature\
--   Compare values with thresholds\
--   Display output\
+-   Generate heart rate
+-   Generate body temperature
+-   Compare values with thresholds
+-   Display output
 -   Trigger SOS alerts
 
-### ✔ Non-Functional Requirements
+ Non-Functional Requirements
 
--   Easy to operate\
--   Readable\
--   Reliable\
+-   Easy to operate
+-   Readable
+-   Reliable
 -   Low resource usage
 
 ------------------------------------------------------------------------
 
-## 🧩 Top-Down Design (Modules)
+Top-Down Design (Modules)
 
-``` text
+text
 generate_vitals()   → Creates random health values  
 check_thresholds()  → Evaluates vitals  
 display_output()    → Prints current readings  
 trigger_sos()       → Displays alert  
 main_loop()         → Runs continuous monitoring  
-```
+
 
 ------------------------------------------------------------------------
 
-## 🧠 Step-Wise Algorithm
+ Step-Wise Algorithm
 
-1.  Start\
-2.  Generate vitals\
-3.  Print values\
-4.  Check thresholds\
-5.  If abnormal → show SOS alert\
-6.  Else → continue\
-7.  Wait 1 second\
+1.  Start
+2.  Generate vitals
+3.  Print values
+4.  Check thresholds
+5.  If abnormal → show SOS alert
+6.  Else → continue
+7.  Wait 1 second
 8.  Repeat
 
 ------------------------------------------------------------------------
 
-## 🗂 Flowchart (Mermaid)
+ Flowchart (Mermaid)
 
-``` mermaid
+ mermaid
 flowchart TD
     A[Start] --> B[Generate Vitals]
     B --> C[Check Thresholds]
@@ -116,11 +115,11 @@ flowchart TD
     C -->|Normal| E[Continue Monitoring]
     D --> E
     E --> B
-```
+
 
 ------------------------------------------------------------------------
 
-## 🧪 Testing & Refinement
+ Testing & Refinement
 
 -   Tested multiple random ranges\
 -   Verified threshold accuracy\
@@ -129,18 +128,18 @@ flowchart TD
 
 ------------------------------------------------------------------------
 
-## ⭐ Features
+ Features
 
--   Real-time simulation\
--   Automated health checks\
--   Beginner-friendly\
+-   Real-time simulation
+-   Automated health checks
+-   Beginner-friendly
 -   Clean and modular code
 
 ------------------------------------------------------------------------
 
-## 🔄 Detailed Workflow
+ Detailed Workflow
 
-``` mermaid
+ mermaid
 sequenceDiagram
     participant S as System
     participant V as Vital Generator
@@ -154,11 +153,11 @@ sequenceDiagram
     alt Abnormal
         S->>A: Trigger SOS
     end
-```
+
 
 ------------------------------------------------------------------------
 
-## 📁 Folder Structure
+ Folder Structure
 
     project/
     │── project_report/
@@ -169,73 +168,73 @@ sequenceDiagram
 
 ------------------------------------------------------------------------
 
-## ▶️ How to Operate the Program
+How to Operate the Program
 
-### **Step 1 --** Download or clone the GitHub repository
+Step 1 Download or clone the GitHub repository
 
-### **Step 2 --** Open the project folder
+Step 2 Open the project folder
 
-### **Step 3 --** Go to the `src` directory
+Step 3 Go to the `src` directory
 
-### **Step 4 --** Run the program:
+Step 4 Run the program:
 
-``` bash
+ bash
 python main.py
-```
 
-### **Step 5 --** Observe real-time monitoring
 
-You will see:\
-- Heart rate\
-- Temperature\
+Step 5 Observe real-time monitoring
+
+You will see:
+- Heart rate
+- Temperature
 - Status (Normal / Warning / SOS)
 
-### **Step 6 --** SOS Alerts
+Step 6 SOS Alerts
 
 Displayed when vitals cross thresholds.
 
-### **Step 7 --** Stop the program manually (Ctrl + C)
+Step 7 Stop the program manually (Ctrl + C)
 
 ------------------------------------------------------------------------
 
-## 🚀 Future Enhancements
+ Future Enhancements
 
--   Add oxygen monitoring\
--   Integrate real sensors\
--   SMS/Call API\
--   Mobile app\
+-   Add oxygen monitoring
+-   Integrate real sensors
+-   SMS/Call API
+-   Mobile app
 -   Cloud database
 
 ------------------------------------------------------------------------
 
-## 🌍 Real-World Applications
+ Real-World Applications
 
-Useful for:\
-- Elders living alone\
-- Remote patient care\
-- Home health IoT\
-- Hospitals\
+Useful for:
+- Elders living alone
+- Remote patient care
+- Home health IoT
+- Hospitals
 - Wearable devices
 
 ------------------------------------------------------------------------
 
-## 🎓 Importance for Students
+Importance for Students
 
-Students learn:\
-- Real-world coding\
-- Modular design\
-- IoT basics\
+Students learn:
+- Real-world coding
+- Modular design
+- IoT basics
 - Proper documentation
 
 ------------------------------------------------------------------------
 
-## 🏁 Conclusion
+ Conclusion
 
 The Elder Health Monitoring & SOS Alert System demonstrates how simple
-Python concepts can solve meaningful real-world problems.\
+Python concepts can solve meaningful real-world problems.
 By simulating vitals and detecting abnormalities, the system provides
 **automated, continuous monitoring** for elders, helping prevent medical
-delays.\
+delays.
 This foundational model is highly expandable for IoT health technologies
 and real sensor integration.
 
