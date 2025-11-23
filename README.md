@@ -1,6 +1,6 @@
 ## Elder Health Monitoring & SOS Alert System
 
- Introduction
+→→→ Introduction
 
 Caring for the elderly is a growing global challenge. With more nuclear
 families and longer life expectancies, many elders live alone and face
@@ -20,34 +20,34 @@ Many elderly individuals suffer from: - Heart-related emergencies
 - No immediate caretaker response.
 
 Major Issue: Delay in medical attention.
-A simple automated system can help **reduce risk and save lives.
+A simple automated system can help reduce risk and save lives.
 
 ------------------------------------------------------------------------
 
 ## 🥅 Objectives
 
--   Simulate heart rate & temperature\
--   Detect abnormal health conditions\
--   Trigger instant SOS alerts\
--   Demonstrate real-time monitoring\
--   Offer a beginner-friendly Python model
+-   Simulate heart rate & temperature.
+-   Detect abnormal health conditions.
+-   Trigger instant SOS alerts.
+-   Demonstrate real-time monitoring.
+-   Offer a beginner-friendly Python model.
 
 ------------------------------------------------------------------------
 
 ## 📚 Concepts Used (From Coursework)
 
--   **Loops** -- continuous monitoring\
--   **Functions** -- modular approach\
--   **Conditional statements** -- threshold detection\
--   **Random module** -- simulated sensor data\
--   **Time module** -- real-time delay
+-   Loops -- continuous monitoring.
+-   Functions -- modular approach.
+-   Conditional statements -- threshold detection.
+-   Random module -- simulated sensor data.
+-   Time module -- real-time delay.
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tools & Technologies
 
--   Python 3.x\
--   Libraries: `random`, `time`\
+-   Python 3.x
+-   Libraries: `random`, `time`
 -   Console-based UI
 
 ------------------------------------------------------------------------
@@ -55,7 +55,7 @@ A simple automated system can help **reduce risk and save lives.
 ## 📝 Problem Definition
 
 Elders need reliable monitoring, but manual supervision isn't
-practical.\
+practical.
 This system automates vital checking and alerts during emergencies.
 
 ------------------------------------------------------------------------
@@ -64,18 +64,18 @@ This system automates vital checking and alerts during emergencies.
 
 ### ✔ Functional Requirements
 
--   Generate heart rate\
--   Generate body temperature\
--   Compare values with thresholds\
--   Display output\
--   Trigger SOS alerts
+-   Generate heart rate.
+-   Generate body temperature.
+-   Compare values with thresholds.
+-   Display output.
+-   Trigger SOS alerts.
 
 ### ✔ Non-Functional Requirements
 
--   Easy to operate\
--   Readable\
--   Reliable\
--   Low resource usage
+-   Easy to operate.
+-   Readable.
+-   Reliable.
+-   Low resource usage.
 
 ------------------------------------------------------------------------
 
@@ -93,13 +93,13 @@ main_loop()         → Runs continuous monitoring
 
 ## 🧠 Step-Wise Algorithm
 
-1.  Start\
-2.  Generate vitals\
-3.  Print values\
-4.  Check thresholds\
-5.  If abnormal → show SOS alert\
-6.  Else → continue\
-7.  Wait 1 second\
+1.  Start.
+2.  Generate vitals.
+3.  Print values.
+4.  Check threshold.
+5.  If abnormal → show SOS alert.
+6.  Else → continue.
+7.  Wait 1 second.
 8.  Repeat
 
 ------------------------------------------------------------------------
@@ -120,19 +120,19 @@ flowchart TD
 
 ## 🧪 Testing & Refinement
 
--   Tested multiple random ranges\
--   Verified threshold accuracy\
--   Continuous loop stability\
--   Improved warnings & readability
+-   Tested multiple random ranges,
+-   Verified threshold accuracy,
+-   Continuous loop stability,
+-   Improved warnings & readability.
 
 ------------------------------------------------------------------------
 
 ## ⭐ Features
 
--   Real-time simulation\
--   Automated health checks\
--   Beginner-friendly\
--   Clean and modular code
+-   Real-time simulation.
+-   Automated health checks.
+-   Beginner-friendly.
+-   Clean and modular code.
 
 ------------------------------------------------------------------------
 
@@ -169,71 +169,71 @@ sequenceDiagram
 
 ## ▶️ How to Operate the Program
 
-### **Step 1 --** Download or clone the GitHub repository
+### Step 1 -- Download or clone the GitHub repository
 
-### **Step 2 --** Open the project folder
+### Step 2 -- Open the project folder
 
-### **Step 3 --** Go to the `src` directory
+### Step 3 -- Go to the `src` directory
 
-### **Step 4 --** Run the program:
+### Step 4 -- Run the program:
 
 ``` bash
 python main.py
 ```
 
-### **Step 5 --** Observe real-time monitoring
+### Step 5 -- Observe real-time monitoring
 
-You will see:\
-- Heart rate\
-- Temperature\
+You will see:
+- Heart rate
+- Temperature
 - Status (Normal / Warning / SOS)
 
-### **Step 6 --** SOS Alerts
+### Step 6 -- SOS Alerts
 
 Displayed when vitals cross thresholds.
 
-### **Step 7 --** Stop the program manually (Ctrl + C)
+### Step 7 -- Stop the program manually (Ctrl + C)
 
 ------------------------------------------------------------------------
 
 ## 🚀 Future Enhancements
 
--   Add oxygen monitoring\
--   Integrate real sensors\
--   SMS/Call API\
--   Mobile app\
--   Cloud database
+-   Add oxygen monitoring.
+-   Integrate real sensors.
+-   SMS/Call API.
+-   Mobile app.
+-   Cloud database.
 
 ------------------------------------------------------------------------
 
 ## 🌍 Real-World Applications
 
-Useful for:\
-- Elders living alone\
-- Remote patient care\
-- Home health IoT\
-- Hospitals\
-- Wearable devices
+Useful for:
+- Elders living alone,
+- Remote patient care,
+- Home health IoT,
+- Hospitals,
+- Wearable devices.
 
 ------------------------------------------------------------------------
 
 ## 🎓 Importance for Students
 
-Students learn:\
-- Real-world coding\
-- Modular design\
-- IoT basics\
-- Proper documentation
+Students learn:
+- Real-world coding,
+- Modular design,
+- IoT basics,
+- Proper documentation.
 
 ------------------------------------------------------------------------
 
 ## 🏁 Conclusion
 
 The Elder Health Monitoring & SOS Alert System demonstrates how simple
-Python concepts can solve meaningful real-world problems.\
+Python concepts can solve meaningful real-world problems.
 By simulating vitals and detecting abnormalities, the system provides
-**automated, continuous monitoring** for elders, helping prevent medical
-delays.\
+automated, continuous monitoring for elders, helping prevent medical
+delays.
 This foundational model is highly expandable for IoT health technologies
 and real sensor integration.
 
