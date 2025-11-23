@@ -5,8 +5,10 @@ Elder Health Monitoring & SOS Alert System
 •Caring for the elderly presents an increasing challenge globally. Due, to the 
 emergence of nuclear family setups and longer lifespans numerous older 
 adults reside by themselves. Face dangers during urgent situations. 
+
 • This project offers an automated health surveillance system that mimics 
 signs and notifies emergency responders when abnormalities are identified. 
+
 • The system is developed using Python and demonstrates how fundamental 
 programming concepts can solve real-world problems effectively.
 
