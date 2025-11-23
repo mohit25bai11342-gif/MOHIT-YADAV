@@ -2,12 +2,7 @@
 
 →→→ Introduction
 
-Caring for the elderly is a growing global challenge. With more nuclear
-families and longer life expectancies, many elders live alone and face
-medical risks during emergencies.
-This project provides an automated **Python-based health monitoring
-system** that simulates vital signs and triggers SOS alerts when
-abnormalities occur.
+Caring for elderly people has become an increasingly important responsibility as families grow smaller and life expectancy continues to rise. Many older adults now live alone, which can leave them vulnerable during sudden medical problems or emergencies when no one is around to help. This project aims to offer a practical and reliable solution through an automated Python-based health monitoring system. It simulates essential vital signs, keeps track of unusual patterns, and triggers an SOS alert when something seems wrong. The goal is to provide elders with an added layer of safety and reassurance, while giving families peace of mind.
 
 ------------------------------------------------------------------------
 
