@@ -4,7 +4,7 @@
 
 Caring for the elderly is a growing global challenge. With more nuclear
 families and longer life expectancies, many elders live alone and face
-medical risks during emergencies.\
+medical risks during emergencies.
 This project provides an automated **Python-based health monitoring
 system** that simulates vital signs and triggers SOS alerts when
 abnormalities occur.
@@ -14,13 +14,13 @@ abnormalities occur.
  ## Real-World Problem
 
 Many elderly individuals suffer from: - Heart-related emergencies
-- High fever or infections
-- Low oxygen levels
-- Sudden falls or unconsciousness
-- No immediate caretaker response
+- High fever or infections.
+- Low oxygen levels.
+- Sudden falls or unconsciousness.
+- No immediate caretaker response.
 
-**Major Issue:** Delay in medical attention.\
-A simple automated system can help **reduce risk and save lives**.
+Major Issue: Delay in medical attention.
+A simple automated system can help **reduce risk and save lives.
 
 ------------------------------------------------------------------------
 
