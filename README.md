@@ -13,10 +13,10 @@ abnormalities occur.
 
  ## Real-World Problem
 
-Many elderly individuals suffer from: - Heart-related emergencies\
-- High fever or infections\
-- Low oxygen levels\
-- Sudden falls or unconsciousness\
+Many elderly individuals suffer from: - Heart-related emergencies
+- High fever or infections
+- Low oxygen levels
+- Sudden falls or unconsciousness
 - No immediate caretaker response
 
 **Major Issue:** Delay in medical attention.\
