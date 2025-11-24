@@ -37,11 +37,11 @@ THRESHOLDS = {
 EMERGENCY_CONTACT = {
     "ambulance_number": "102",
     "caregiver_name": "Family",
-    "caregiver_number": "9999999999",
+    "caregiver_number": "9999999999", #phone number of family memebers or a person eho take care of yours
 }
 
 
-def ensure_csv_header(path):
+def ensure_csv_header(path):# it will automatic take the readings 
     if not LOG_TO_CSV:
         return
     if not os.path.exists(path):
@@ -71,7 +71,7 @@ def log_reading(path, hr, temp_c, spo2, status, note=""):
         ])
 
 
-def simulate_vitals(mode="normal"):
+def simulate_vitals(mode="normal"): #type of modes used in the device like manual , aumatic, etc
     if mode == "normal":
         hr = random.randint(65, 85)
         temp = round(random.uniform(36.4, 36.9), 1)
@@ -138,7 +138,7 @@ def check_vitals(hr, temp_c, spo2):
     return status, note_str
 
 
-def trigger_sos(hr, temp_c, spo2, note):
+def trigger_sos(hr, temp_c, spo2, note):# structure to how sos will work
     print("\n" + "!"*60)
     print(" CRITICAL ALERT - SOS TRIGGERED ")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -261,3 +261,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
