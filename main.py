@@ -225,7 +225,7 @@ def manual_sos():# sos structure for manual readings
     spo2 = input("SpO2 (or Enter): ").strip()
     note = input("Note: ").strip()
 
-    trigger_sos(
+    trigger_sos(#calling the trigger_sos() function and sending four carefully processed values to it.
         int(hr) if hr else None,
         float(temp) if temp else None,
         int(spo2) if spo2 else None,
@@ -233,7 +233,7 @@ def manual_sos():# sos structure for manual readings
     )
 
 
-def main():
+def main():# this function update csv file with the health readings , if there is no csv file then it will create it and make sure that it will ready with the data
     ensure_csv_header(CSV_FILENAME)
     print_header()
 
@@ -261,6 +261,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
