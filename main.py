@@ -13,7 +13,7 @@ CSV_FILENAME = "vitals_log.csv"
 
 SAMPLE_INTERVAL = 2.0 
 
-THRESHOLDS = {
+THRESHOLDS = {# these are values of normal persons and use to compare with readings and manual data
     "heart_rate": {
         "normal_min": 60,
         "normal_max": 100,
@@ -34,7 +34,7 @@ THRESHOLDS = {
     },
 }
 
-EMERGENCY_CONTACT = {
+EMERGENCY_CONTACT = {# here these things are related to your person of caring
     "ambulance_number": "102",
     "caregiver_name": "Family",
     "caregiver_number": "9999999999", #phone number of family memebers or a person eho take care of yours
@@ -71,8 +71,8 @@ def log_reading(path, hr, temp_c, spo2, status, note=""):
         ])
 
 
-def simulate_vitals(mode="normal"): #type of modes used in the device like manual , aumatic, etc
-    if mode == "normal":
+def simulate_vitals(mode="normal"): #type of modes used in device
+    if mode == "normal":# normal mode when readings are normal
         hr = random.randint(65, 85)
         temp = round(random.uniform(36.4, 36.9), 1)
         spo2 = random.randint(95, 99)
@@ -82,7 +82,7 @@ def simulate_vitals(mode="normal"): #type of modes used in the device like manua
         temp = round(random.uniform(35.5, 40.5), 1)
         spo2 = random.randint(85, 99)
 
-    elif mode == "danger":
+    elif mode == "danger":# when readings are above from normal readings
         hr = random.choice([random.randint(121, 160), random.randint(20, 39)])
         temp = round(random.uniform(39.0, 41.0), 1)
         spo2 = random.randint(80, 89)
@@ -100,12 +100,12 @@ def simulate_vitals(mode="normal"): #type of modes used in the device like manua
     return hr, temp, spo2
 
 
-def check_vitals(hr, temp_c, spo2):
+def check_vitals(hr, temp_c, spo2):# here comparing with thresholds values
     notes = []
     status = "Normal"
 
     
-    thr = THRESHOLDS["heart_rate"]
+    thr = THRESHOLDS["heart_rate"]# comparing heart rate
     if hr is not None:
         if hr < thr["critical_low"] or hr > thr["critical_high"]:
             status = "Critical"
@@ -115,7 +115,7 @@ def check_vitals(hr, temp_c, spo2):
             notes.append(f"HR high ({hr} bpm)")
 
     
-    tthr = THRESHOLDS["temperature_c"]
+    tthr = THRESHOLDS["temperature_c"]# comparing temrature
     if temp_c is not None:
         if temp_c >= tthr["critical_high"]:
             status = "Critical"
@@ -125,7 +125,7 @@ def check_vitals(hr, temp_c, spo2):
             notes.append(f"Temp high ({temp_c}°C)")
 
     
-    sthr = THRESHOLDS["spo2"]
+    sthr = THRESHOLDS["spo2"]# comparing spo2
     if spo2 is not None:
         if spo2 < sthr["critical_min"]:
             status = "Critical"
@@ -138,7 +138,7 @@ def check_vitals(hr, temp_c, spo2):
     return status, note_str
 
 
-def trigger_sos(hr, temp_c, spo2, note):# structure to how sos will work
+def trigger_sos(hr, temp_c, spo2, note):# structure to how sos will work like calling ambulance, sos message for family memebers
     print("\n" + "!"*60)
     print(" CRITICAL ALERT - SOS TRIGGERED ")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -162,7 +162,7 @@ def print_reading(hr, temp_c, spo2, status, note):
     print(f"[{now}] HR: {hr:3d} | Temp: {temp_c:4.1f}°C | SpO2: {spo2:3d}% --> {status}")
     print("   => " + note)
 
-def user_menu():
+def user_menu():# this function set the mode of operation of the device in which it is used
     print("\nOptions:")
     print(" [1] Normal simulation")
     print(" [2] Random simulation")
@@ -173,7 +173,7 @@ def user_menu():
     print(" [q] Quit\n")
 
 
-def run_simulation(mode="normal"):
+def run_simulation(mode="normal"):# it automaticly take the readings with the help of device which is we used and compare it ,here i use random module to simulate it
     print(f"\n[INFO] Simulation started ({mode}). Press Ctrl+C to stop.")
     try:
         while True:
@@ -183,7 +183,7 @@ def run_simulation(mode="normal"):
             print_reading(hr, temp_c, spo2, status, note)
             log_reading(CSV_FILENAME, hr, temp_c, spo2, status, note)
 
-            if status == "Critical":
+            if status == "Critical":# when status is critical in normal mode
                 trigger_sos(hr, temp_c, spo2, note)
                 print("[INFO] Returning to menu...")
                 time.sleep(2)
@@ -194,23 +194,23 @@ def run_simulation(mode="normal"):
     except KeyboardInterrupt:
         print("\n[INFO] Simulation stopped.")
 
-def manual_entry_mode():
+def manual_entry_mode():# manual readings are given to the device
     print("\nManual Entry Mode. Type 'back' to exit.\n")
     while True:
         try:
-            inp = input("Heart Rate: ").strip()
+            inp = input("Heart Rate: ").strip()# taking manual heart reading
             if inp.lower() == "back":
                 return
             hr = int(inp)
 
-            temp_c = float(input("Temperature °C: ").strip())
+            temp_c = float(input("Temperature °C: ").strip()) # taking  manual tempreture 
             spo2 = int(input("SpO2 %: ").strip())
 
             status, note = check_vitals(hr, temp_c, spo2)
             print_reading(hr, temp_c, spo2, status, note)
             log_reading(CSV_FILENAME, hr, temp_c, spo2, status, "Manual entry")
 
-            if status == "Critical":
+            if status == "Critical":# comparing status
                 if input("Trigger SOS? (y/n): ").strip().lower() == "y":
                     trigger_sos(hr, temp_c, spo2, note)
                     return
@@ -218,7 +218,7 @@ def manual_entry_mode():
         except Exception:
             print("Invalid input. Try again.")
 
-def manual_sos():
+def manual_sos():# sos structure for manual readings
     print("\nManual SOS Trigger")
     hr = input("HR (or Enter): ").strip()
     temp = input("Temp (or Enter): ").strip()
@@ -237,7 +237,7 @@ def main():
     ensure_csv_header(CSV_FILENAME)
     print_header()
 
-    while True:
+    while True:# this module use to calling the particular function for particular mode
         user_menu()
         choice = input("Select: ").strip().lower()
 
@@ -261,4 +261,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
