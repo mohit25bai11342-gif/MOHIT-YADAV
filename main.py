@@ -145,11 +145,11 @@ def trigger_sos(hr, temp_c, spo2, note):# structure to how sos will work like ca
     print(f"Detected critical vitals -> HR: {hr} bpm, Temp: {temp_c}°C, SpO2: {spo2}%")
     print(f"Note: {note}")
     print("Calling emergency services (SIMULATION)...")
-    print(f"Ambulance: {EMERGENCY_CONTACT['ambulance_number']}")
-    print(f"Caregiver: {EMERGENCY_CONTACT['caregiver_name']} ({EMERGENCY_CONTACT['caregiver_number']})")
+    print(f"Ambulance: {EMERGENCY_CONTACT['ambulance_number']}")# calling for ambulance
+    print(f"Caregiver: {EMERGENCY_CONTACT['caregiver_name']} ({EMERGENCY_CONTACT['caregiver_number']})")# calling for family memebers
     print("!"*60 + "\n")
 
-    log_reading(CSV_FILENAME, hr, temp_c, spo2, "CRITICAL", note + " | SOS triggered")
+    log_reading(CSV_FILENAME, hr, temp_c, spo2, "CRITICAL", note + " | SOS triggered")# showing all data which cause sos
 
 
 def print_header():
@@ -261,6 +261,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
