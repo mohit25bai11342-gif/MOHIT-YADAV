@@ -152,12 +152,12 @@ def trigger_sos(hr, temp_c, spo2, note):# structure to how sos will work like ca
     log_reading(CSV_FILENAME, hr, temp_c, spo2, "CRITICAL", note + " | SOS triggered")# showing all data which cause sos
 
 
-def print_header():
+def print_header():#This function prints a nice, clean header at the start of the program to make the output look organized and professional.
     print("=" * 72)
     print("Elder Health Monitoring & SOS Alert System".center(72))
     print("=" * 72)
 
-def print_reading(hr, temp_c, spo2, status, note):
+def print_reading(hr, temp_c, spo2, status, note):#This function displays one complete health reading along with a timestamp, status, and an extra note.
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{now}] HR: {hr:3d} | Temp: {temp_c:4.1f}°C | SpO2: {spo2:3d}% --> {status}")
     print("   => " + note)
@@ -261,6 +261,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
