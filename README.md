@@ -19,7 +19,7 @@ A simple automated system can help reduce risk and save lives.
 
 ------------------------------------------------------------------------
 
-## 🥅 Objectives
+##  Objectives
 
 -   Simulate heart rate & temperature.
 -   Detect abnormal health conditions.
@@ -29,7 +29,7 @@ A simple automated system can help reduce risk and save lives.
 
 ------------------------------------------------------------------------
 
-## 📚 Concepts Used (From Coursework)
+##  Concepts Used (From Coursework)
 
 -   Loops -- continuous monitoring.
 -   Functions -- modular approach.
@@ -39,7 +39,7 @@ A simple automated system can help reduce risk and save lives.
 
 ------------------------------------------------------------------------
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 -   Python 3.x
 -   Libraries: `random`, `time`
@@ -47,7 +47,7 @@ A simple automated system can help reduce risk and save lives.
 
 ------------------------------------------------------------------------
 
-## 📝 Problem Definition
+##  Problem Definition
 
 Elders need reliable monitoring, but manual supervision isn't
 practical.
@@ -55,9 +55,9 @@ This system automates vital checking and alerts during emergencies.
 
 ------------------------------------------------------------------------
 
-## 🔍 Requirements Analysis
+##  Requirements Analysis
 
-### ✔ Functional Requirements
+### Functional Requirements
 
 -   Generate heart rate.
 -   Generate body temperature.
@@ -65,7 +65,7 @@ This system automates vital checking and alerts during emergencies.
 -   Display output.
 -   Trigger SOS alerts.
 
-### ✔ Non-Functional Requirements
+### Non-Functional Requirements
 
 -   Easy to operate.
 -   Readable.
@@ -74,7 +74,7 @@ This system automates vital checking and alerts during emergencies.
 
 ------------------------------------------------------------------------
 
-## 🧩 Top-Down Design (Modules)
+##  Top-Down Design (Modules)
 
 ``` text
 generate_vitals()   → Creates random health values  
@@ -86,7 +86,7 @@ main_loop()         → Runs continuous monitoring
 
 ------------------------------------------------------------------------
 
-## 🧠 Step-Wise Algorithm
+##  Step-Wise Algorithm
 
 1.  Start.
 2.  Generate vitals.
@@ -99,7 +99,7 @@ main_loop()         → Runs continuous monitoring
 
 ------------------------------------------------------------------------
 
-## 🗂 Flowchart (Mermaid)
+##  Flowchart (Mermaid)
 
 ``` mermaid
 flowchart TD
@@ -113,7 +113,7 @@ flowchart TD
 
 ------------------------------------------------------------------------
 
-## 🧪 Testing & Refinement
+##  Testing & Refinement
 
 -   Tested multiple random ranges,
 -   Verified threshold accuracy,
@@ -122,7 +122,7 @@ flowchart TD
 
 ------------------------------------------------------------------------
 
-## ⭐ Features
+##  Features
 
 -   Real-time simulation.
 -   Automated health checks.
@@ -131,7 +131,7 @@ flowchart TD
 
 ------------------------------------------------------------------------
 
-## 🔄 Detailed Workflow
+##  Detailed Workflow
 
 ``` mermaid
 sequenceDiagram
@@ -151,7 +151,7 @@ sequenceDiagram
 
 ------------------------------------------------------------------------
 
-## 📁 Folder Structure
+##  Folder Structure
 
     project/
     │── project_report/
@@ -162,7 +162,7 @@ sequenceDiagram
 
 ------------------------------------------------------------------------
 
-## ▶️ How to Operate the Program
+##  How to Operate the Program
 
 ### Step 1 -- Download or clone the GitHub repository
 
@@ -191,7 +191,7 @@ Displayed when vitals cross thresholds.
 
 ------------------------------------------------------------------------
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 -   Add oxygen monitoring.
 -   Integrate real sensors.
@@ -201,7 +201,7 @@ Displayed when vitals cross thresholds.
 
 ------------------------------------------------------------------------
 
-## 🌍 Real-World Applications
+##  Real-World Applications
 
 Useful for:
 - Elders living alone,
@@ -212,7 +212,7 @@ Useful for:
 
 ------------------------------------------------------------------------
 
-## 🎓 Importance for Students
+##  Importance for Students
 
 Students learn:
 - Real-world coding,
@@ -222,7 +222,7 @@ Students learn:
 
 ------------------------------------------------------------------------
 
-## 🏁 Conclusion
+##  Conclusion
 
 The Elder Health Monitoring & SOS Alert System demonstrates how simple
 Python concepts can solve meaningful real-world problems.
