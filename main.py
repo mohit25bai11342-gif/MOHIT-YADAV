@@ -1,8 +1,8 @@
-
+#here we importing diffrent modules 
 
 import time
 import random
-import csv
+import csv#module for csv file which store our data
 import os
 import sys
 from datetime import datetime
@@ -261,5 +261,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
