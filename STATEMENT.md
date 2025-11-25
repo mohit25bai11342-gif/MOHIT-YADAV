@@ -1,10 +1,10 @@
 Project Statement Document
-Elder Health Monitoring & SOS Alert System
-1. Purpose of the Project Statement
+  Elder Health Monitoring & SOS Alert System
+   1. Purpose of the Project Statement
 
-This document clearly explains the intention, direction, and overall vision behind the Elder Health Monitoring & SOS Alert System. It defines what the project aims to achieve, why it is needed, and the boundaries within which it operates. Unlike a README—which focuses on running the program—this statement focuses on the bigger picture and the motivation behind building the system.
+             This document clearly explains the intention, direction, and overall vision behind the Elder Health Monitoring & SOS Alert System. It defines what                 the project aims to achieve, why it is needed, and the boundaries within which it operates. Unlike a README—which focuses on running the program—this              statement focuses on the bigger picture and the motivation behind building the system.
 
-2. Problem Statement
+  2. Problem Statement
 
 Today, many elderly individuals live by themselves, often without constant support or supervision. During sudden health issues—like abnormal heart rate, high fever, low oxygen levels, or unconsciousness—there is usually no one immediately available to help. Such delays can increase the risk of serious medical complications.
 This situation highlights the need for a simple, automated monitoring system that constantly checks vital signs and raises an alert the moment something unusual happens.
